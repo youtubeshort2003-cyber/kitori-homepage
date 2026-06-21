@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>紀とり｜和歌山県御坊市の炭火焼き鳥</title>
+<meta name="description" content="和歌山県御坊市の焼き鳥『紀とり』。紀州の地鶏を備長炭で一本一本丁寧に焼き上げる、大人のための炭火居酒屋。" />
+<meta name="theme-color" content="#0d0b0a" />
+
+<!-- OGP -->
+<meta property="og:type" content="restaurant.restaurant" />
+<meta property="og:title" content="紀とり｜和歌山県御坊市の炭火焼き鳥" />
+<meta property="og:description" content="紀州の地鶏を備長炭で。御坊の夜に灯る、炭火と酒の店。" />
+<meta property="og:locale" content="ja_JP" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+</head>
+<body>
+
+<!-- ============ プリローダー ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <span class="preloader__mark">紀</span>
+    <span class="preloader__line"></span>
+  </div>
+</div>
+
+<!-- ============ 熾火パーティクル ============ -->
+<canvas class="embers" id="embers" aria-hidden="true"></canvas>
+
+<!-- ============ ヘッダー ============ -->
+<header class="header" id="header">
+  <a href="#hero" class="brand" aria-label="紀とり トップへ">
+    <span class="brand__kanji">紀とり</span>
+    <span class="brand__roman">KITORI</span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="メインナビゲーション">
+    <ul class="nav__list">
+      <li><a href="#concept"><span class="nav__num">01</span><span class="nav__ja">想い</span></a></li>
+      <li><a href="#craft"><span class="nav__num">02</span><span class="nav__ja">こだわり</span></a></li>
+      <li><a href="#menu"><span class="nav__num">03</span><span class="nav__ja">お品書き</span></a></li>
+      <li><a href="#space"><span class="nav__num">04</span><span class="nav__ja">空間</span></a></li>
+      <li><a href="#info"><span class="nav__num">05</span><span class="nav__ja">ご案内</span></a></li>
+    </ul>
+    <a href="tel:0738525211" class="nav__tel">
+      <span class="nav__tel-label">ご予約</span>
+      <span class="nav__tel-num">0738-52-5211</span>
+    </a>
+  </nav>
+
+  <button class="burger" id="burger" aria-label="メニューを開く" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+<!-- ============ ヒーロー ============ -->
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__glow"></div>
+    <div class="hero__grain"></div>
+  </div>
+
+  <div class="hero__inner">
+    <p class="hero__eyebrow" data-reveal>和歌山県御坊市 ・ 炭火焼き鳥</p>
+    <h1 class="hero__title">
+      <span class="hero__title-main" data-reveal>紀とり</span>
+    </h1>
+    <p class="hero__lead" data-reveal>
+      紀州の地鶏を、備長炭で。<br />
+      御坊の夜にそっと灯る、炭火と酒の店。
+    </p>
+    <div class="hero__cta" data-reveal>
+      <a href="#menu" class="btn btn--primary">お品書きを見る</a>
+      <a href="#info" class="btn btn--ghost">ご予約・アクセス</a>
+    </div>
+  </div>
+
+  <div class="hero__vertical" aria-hidden="true">
+    <span>一本に、心を込めて。</span>
+  </div>
+
+  <a href="#concept" class="hero__scroll" aria-label="下へスクロール">
+    <span class="hero__scroll-text">Scroll</span>
+    <span class="hero__scroll-line"></span>
+  </a>
+</section>
+
+<!-- ============ 想い / コンセプト ============ -->
+<section class="concept" id="concept">
+  <div class="section__index" aria-hidden="true">01</div>
+  <div class="concept__inner">
+    <div class="concept__head" data-reveal>
+      <p class="label">Concept</p>
+      <h2 class="heading">
+        火と向き合う、<br class="sp-br" />静かな時間。
+      </h2>
+    </div>
+    <div class="concept__body" data-reveal>
+      <p>
+        鶏の旨みは、火加減ひとつで表情を変えます。
+        紀とりでは、紀州の地で育った鶏を、その日の良いところだけ仕入れ、
+        備長炭の遠赤外線で一本ずつ手焼きで仕上げます。
+      </p>
+      <p>
+        派手さはいりません。
+        皮はぱりりと香ばしく、身はふっくらと。
+        噛むほどに広がる滋味を、冷えた一杯とともに。
+        御坊の夜に、心ほどける時間をご用意してお待ちしています。
+      </p>
+      <p class="concept__sign">紀とり　店主</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ こだわり 3本柱 ============ -->
+<section class="craft" id="craft">
+  <div class="section__index" aria-hidden="true">02</div>
+  <div class="craft__head" data-reveal>
+    <p class="label">Our Craft</p>
+    <h2 class="heading heading--center">三つの、こだわり。</h2>
+  </div>
+
+  <div class="craft__grid">
+    <article class="craft-card" data-reveal>
+      <span class="craft-card__no">壱</span>
+      <h3 class="craft-card__title">紀州備長炭</h3>
+      <p class="craft-card__lead">遠赤の、火力。</p>
+      <p class="craft-card__text">
+        和歌山が誇る最高峰の白炭・紀州備長炭。
+        高温と遠赤外線が表面を一気に焼き締め、
+        旨みと肉汁を内へ閉じ込めます。
+      </p>
+    </article>
+
+    <article class="craft-card" data-reveal>
+      <span class="craft-card__no">弐</span>
+      <h3 class="craft-card__title">紀州の地鶏</h3>
+      <p class="craft-card__lead">毎朝の、目利き。</p>
+      <p class="craft-card__text">
+        歯ごたえと香りに優れた地鶏を、
+        信頼できる生産者から一羽ごとに。
+        新鮮なうちに店で捌き、部位の個性を活かします。
+      </p>
+    </article>
+
+    <article class="craft-card" data-reveal>
+      <span class="craft-card__no">参</span>
+      <h3 class="craft-card__title">手焼きの妙</h3>
+      <p class="craft-card__lead">一本ずつ、丁寧に。</p>
+      <p class="craft-card__text">
+        串打ち三年、焼き一生。
+        炭と対話しながら、部位ごとに焼き加減を見極める。
+        最良の一瞬で、目の前へお出しします。
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ お品書き ============ -->
+<section class="menu" id="menu">
+  <div class="section__index" aria-hidden="true">03</div>
+  <div class="menu__head" data-reveal>
+    <p class="label">Menu</p>
+    <h2 class="heading heading--center">お品書き</h2>
+    <p class="menu__note">表示は税込価格です。仕入れにより内容が変わる場合がございます。</p>
+  </div>
+
+  <div class="menu__columns">
+    <div class="menu__col" data-reveal>
+      <h3 class="menu__cat"><span class="menu__cat-ja">焼き鳥</span><span class="menu__cat-en">Yakitori</span></h3>
+      <ul class="menu__list">
+        <li><span class="menu__name">もも</span><span class="menu__dots"></span><span class="menu__price">¥220</span></li>
+        <li><span class="menu__name">皮</span><span class="menu__dots"></span><span class="menu__price">¥200</span></li>
+        <li><span class="menu__name">つくね（卵黄添え）</span><span class="menu__dots"></span><span class="menu__price">¥280</span></li>
+        <li><span class="menu__name">せせり</span><span class="menu__dots"></span><span class="menu__price">¥240</span></li>
+        <li><span class="menu__name">砂ずり</span><span class="menu__dots"></span><span class="menu__price">¥200</span></li>
+        <li><span class="menu__name">レバー</span><span class="menu__dots"></span><span class="menu__price">¥220</span></li>
+        <li><span class="menu__name">ぼんじり</span><span class="menu__dots"></span><span class="menu__price">¥240</span></li>
+        <li><span class="menu__name">手羽先</span><span class="menu__dots"></span><span class="menu__price">¥260</span></li>
+      </ul>
+    </div>
+
+    <div class="menu__col" data-reveal>
+      <h3 class="menu__cat"><span class="menu__cat-ja">逸品</span><span class="menu__cat-en">Specialties</span></h3>
+      <ul class="menu__list">
+        <li><span class="menu__name">紀州うめ鶏の刺身</span><span class="menu__dots"></span><span class="menu__price">¥880</span></li>
+        <li><span class="menu__name">鶏白湯のおでん</span><span class="menu__dots"></span><span class="menu__price">¥680</span></li>
+        <li><span class="menu__name">だし巻き玉子</span><span class="menu__dots"></span><span class="menu__price">¥580</span></li>
+        <li><span class="menu__name">炭火焼き 季節野菜</span><span class="menu__dots"></span><span class="menu__price">¥520</span></li>
+        <li><span class="menu__name">親子丼（〆）</span><span class="menu__dots"></span><span class="menu__price">¥780</span></li>
+        <li><span class="menu__name">鶏スープの中華そば（〆）</span><span class="menu__dots"></span><span class="menu__price">¥680</span></li>
+      </ul>
+    </div>
+
+    <div class="menu__col" data-reveal>
+      <h3 class="menu__cat"><span class="menu__cat-ja">お飲み物</span><span class="menu__cat-en">Drinks</span></h3>
+      <ul class="menu__list">
+        <li><span class="menu__name">生ビール</span><span class="menu__dots"></span><span class="menu__price">¥580</span></li>
+        <li><span class="menu__name">紀州の地酒（一合）</span><span class="menu__dots"></span><span class="menu__price">¥680〜</span></li>
+        <li><span class="menu__name">梅酒（南高梅）</span><span class="menu__dots"></span><span class="menu__price">¥520</span></li>
+        <li><span class="menu__name">本格焼酎</span><span class="menu__dots"></span><span class="menu__price">¥520〜</span></li>
+        <li><span class="menu__name">ハイボール</span><span class="menu__dots"></span><span class="menu__price">¥480</span></li>
+        <li><span class="menu__name">ソフトドリンク</span><span class="menu__dots"></span><span class="menu__price">¥380</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="menu__course" data-reveal>
+    <div class="menu__course-inner">
+      <p class="menu__course-label">— おまかせ —</p>
+      <h3 class="menu__course-title">紀とり コース</h3>
+      <p class="menu__course-price">¥4,500 <span>／ お一人様（要予約）</span></p>
+      <p class="menu__course-text">
+        前菜から焼き鳥の盛り合わせ、逸品、〆の一品まで。
+        その日いちばんの素材で組み立てる、店主おまかせの全8品。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 空間 ============ -->
+<section class="space" id="space">
+  <div class="section__index" aria-hidden="true">04</div>
+  <div class="space__inner">
+    <div class="space__text" data-reveal>
+      <p class="label">Atmosphere</p>
+      <h2 class="heading">炭の香りに<br />包まれて。</h2>
+      <p>
+        檜のカウンター越しに、炭がぱちりと爆ぜる。
+        ゆらめく火を眺めながらの一杯は、それだけでご馳走です。
+      </p>
+      <p>
+        おひとりさまにはカウンター席を、
+        ご家族やお仲間には掘りごたつのお席を。
+        大切な日の集まりには、半個室もご用意しております。
+      </p>
+      <ul class="space__features">
+        <li>カウンター 8席</li>
+        <li>テーブル・掘りごたつ 16席</li>
+        <li>半個室（〜6名様）</li>
+      </ul>
+    </div>
+    <div class="space__visual" data-reveal aria-hidden="true">
+      <div class="space__frame space__frame--1"><span>炭火</span></div>
+      <div class="space__frame space__frame--2"><span>檜の<br>カウンター</span></div>
+      <div class="space__frame space__frame--3"><span>地酒</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ご案内 / アクセス ============ -->
+<section class="info" id="info">
+  <div class="section__index" aria-hidden="true">05</div>
+  <div class="info__head" data-reveal>
+    <p class="label">Information</p>
+    <h2 class="heading heading--center">ご予約・店舗のご案内</h2>
+  </div>
+
+  <div class="info__grid">
+    <div class="info__details" data-reveal>
+      <dl class="info__dl">
+        <div class="info__row">
+          <dt>店名</dt>
+          <dd>炭火焼き鳥 紀とり</dd>
+        </div>
+        <div class="info__row">
+          <dt>住所</dt>
+          <dd>〒644-0011<br />和歌山県御坊市湯川町財部218-5-5</dd>
+        </div>
+        <div class="info__row">
+          <dt>電話</dt>
+          <dd><a href="tel:0738525211">0738-52-5211</a></dd>
+        </div>
+        <div class="info__row">
+          <dt>営業時間</dt>
+          <dd>17:00 〜 22:30</dd>
+        </div>
+        <div class="info__row">
+          <dt>定休日</dt>
+          <dd>月曜日</dd>
+        </div>
+        <div class="info__row">
+          <dt>席数</dt>
+          <dd>カウンター・テーブル・座敷</dd>
+        </div>
+        <div class="info__row">
+          <dt>お支払い</dt>
+          <dd>現金 / 各種カード</dd>
+        </div>
+      </dl>
+
+      <div class="info__reserve">
+        <p class="info__reserve-text">ご予約・お問い合わせはお電話にて承ります。</p>
+        <a href="tel:0738525211" class="btn btn--primary btn--full">
+          <span class="btn__sub">お電話でのご予約</span>
+          0738-52-5211
+        </a>
+      </div>
+    </div>
+
+    <div class="info__map" data-reveal>
+      <div class="info__map-frame" aria-label="店舗周辺の地図">
+        <iframe
+          title="紀とり 周辺地図"
+          src="https://www.google.com/maps?q=%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C%E5%BE%A1%E5%9D%8A%E5%B8%82%E6%B9%AF%E5%B7%9D%E7%94%BA%E8%B2%A1%E9%83%A8218-5-5&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="info__map-note">JR紀勢本線 学門駅より約760m（徒歩約10分）／駐車場あり</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ フッター ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="footer__kanji">紀とり</span>
+      <span class="footer__roman">KITORI ・ GOBO, WAKAYAMA</span>
+    </div>
+    <nav class="footer__nav" aria-label="フッターナビゲーション">
+      <a href="#concept">想い</a>
+      <a href="#craft">こだわり</a>
+      <a href="#menu">お品書き</a>
+      <a href="#space">空間</a>
+      <a href="#info">ご案内</a>
+    </nav>
+    <p class="footer__copy">© <span id="year"></span> 炭火焼き鳥 紀とり All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a href="#hero" class="totop" id="totop" aria-label="トップへ戻る">↑</a>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
